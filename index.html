@@ -1,1 +1,41 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jiaqi Yu — A landscape to explore</title><link rel="stylesheet" href="hero-refined.css"><link rel="stylesheet" href="mountain-play.css"></head><body><a class="skip" href="#home">Skip to content</a><main><section class="hero" id="home"><header class="header"><a class="brand" href="#home">Jiaqi Yu</a><nav><a href="#about">About</a><a href="#interaction">Interaction</a></nav></header><div class="identity"><p class="eyebrow"><span></span>A personal perspective</p><h1>Jiaqi Yu</h1><p class="tagline">Across vision, language &amp; action.</p><p class="bio">Exploring multimodal intelligence <br>and embodied systems that <br>perceive, reason and act.</p><a href="#about" class="explore">A little about me <span>↗</span></a></div><div class="mountain"><canvas id="mountain" tabindex="0" role="img" aria-label="Interactive line mountain. Drag or use arrow keys to rotate. Click or press Space to trace. Double click or press Enter to separate the layers." aria-describedby="help"></canvas><div class="mountain-caption"><p id="help">Drag to rotate · Click to trace · Double-click to unfold</p><div class="tools"><span id="state" role="status">A landscape to explore</span><button id="motion" aria-pressed="false">Pause</button><button id="reset">Reset</button></div></div></div><div class="hero-footer"><a href="#about">Further down <span>↓</span></a><span>Curiosity, in motion.</span></div></section><section class="about" id="about"><p class="eyebrow">A personal perspective</p><h2>Curiosity lives<br>between disciplines.</h2><p>Seeing the world. Reasoning about it. Acting within it.</p></section><section class="design" id="interaction"><h2>一座可以把玩的山。</h2><div><p>拖动旋转；单击放出沿线游走的光点；双击展开或合拢山体切片。键盘方向键旋转，空格释放光点，Enter 展开，Esc 复位。触屏支持拖动、轻点与双点。</p><small>参考山峰的构图重新生成三维线稿，非原图描摹。</small></div></section></main><script src="mountain-play.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiaqi Yu — exploring multimodal intelligence and embodied systems across action, vision and language.">
+  <meta name="theme-color" content="#f5f1e9">
+  <title>Jiaqi Yu — Action, vision & language</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="mobius.css">
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="visual" aria-hidden="true">
+    <svg class="fallback" viewBox="0 0 600 600"><g fill="none" stroke="currentColor" stroke-width="1"><ellipse cx="300" cy="300" rx="220" ry="110" transform="rotate(-35 300 300)"/><ellipse cx="300" cy="300" rx="210" ry="135" transform="rotate(-25 300 300)"/><ellipse cx="300" cy="300" rx="195" ry="155" transform="rotate(-15 300 300)"/></g></svg>
+    <canvas id="mobius"></canvas>
+  </div>
+  <header class="header">
+    <a class="brand" href="#home"><svg viewBox="0 0 40 26" aria-hidden="true"><path d="M20 13C7-7-9 23 7 22c12-1 14-23 26-18 14 6 1 28-13 9Z"/></svg>Jiaqi Yu</a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#action">Interests</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <section class="chapter hero" id="home" data-stage="home" aria-labelledby="name">
+      <div class="copy"><h1 id="name">Jiaqi Yu</h1><p class="tagline">Across action,<br>vision &amp; language.</p><p class="description">Exploring multimodal intelligence and embodied systems that perceive, reason and act.</p><a class="text-link" href="#about">Get to know me <span aria-hidden="true">↓</span></a></div>
+      <p class="scroll-note">Scroll to follow the connections.</p>
+    </section>
+    <section class="chapter" id="about" data-stage="about" aria-labelledby="about-title"><div class="copy"><p class="eyebrow">About</p><h2 id="about-title">Curiosity lives<br>between disciplines.</h2><p class="intro">I’m interested in how intelligent systems make sense of the world—and how that understanding becomes action.</p><p class="description">My interests connect visual perception, language and embodied intelligence. The continuous surface alongside these pages is a way to explore those connections.</p></div></section>
+    <div id="interests">
+      <section class="chapter" id="action" data-stage="action" aria-labelledby="action-title"><div class="copy"><p class="eyebrow">Research interests</p><h2 id="action-title">Action</h2><p class="chapter-line">Learning through interaction.</p><p class="description">Bringing intelligence into interaction with the physical world. Actions change what a system encounters—and what it can learn next.</p><a class="text-link" href="#vision">From action to perception <span aria-hidden="true">↓</span></a></div></section>
+      <section class="chapter" id="vision" data-stage="vision" aria-labelledby="vision-title"><div class="copy"><p class="eyebrow">Research interests</p><h2 id="vision-title">Vision</h2><p class="chapter-line">Making sense of what we see.</p><p class="description">Perceiving structure and meaning in visual information. Connecting observations with a richer understanding of the surrounding world.</p><a class="text-link" href="#language">From perception to meaning <span aria-hidden="true">↓</span></a></div></section>
+      <section class="chapter" id="language" data-stage="language" aria-labelledby="language-title"><div class="copy"><p class="eyebrow">Research interests</p><h2 id="language-title">Language</h2><p class="chapter-line">Connecting observation and thought.</p><p class="description">Connecting perception with language, context and reasoning—and exploring how that understanding can guide action.</p><a class="text-link" href="#contact">Continue the conversation <span aria-hidden="true">↓</span></a></div></section>
+    </div>
+    <section class="chapter contact" id="contact" data-stage="contact" aria-labelledby="contact-title"><div class="copy"><p class="eyebrow">Connect</p><h2 id="contact-title">Let’s exchange<br>ideas.</h2><a class="text-link" href="https://github.com/Thames-H">Find me on GitHub <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><span>Jiaqi Yu</span><span>A continuous conversation.</span><a href="#home">Back to top ↑</a></footer>
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="mobius.js"></script>
+</body>
+</html>
